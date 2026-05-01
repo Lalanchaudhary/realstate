@@ -491,6 +491,54 @@ main {
   font-size: 1.8rem;
 }
 
+.feature-grid,
+.portfolio-grid,
+.process-grid,
+.awards-grid,
+.contact-footer-info {
+  display: grid;
+  gap: 24px;
+}
+
+.feature-grid,
+.portfolio-grid,
+.process-grid,
+.awards-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card,
+.portfolio-card,
+.process-card,
+.award-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.feature-card h3,
+.portfolio-card h3,
+.process-card h3,
+.award-card h3 {
+  margin: 0 0 14px;
+}
+
+.process-card p,
+.portfolio-card p,
+.feature-card p,
+.award-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-footer-info {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 40px;
+}
+
 .cta-panel {
   display: flex;
   align-items: center;
