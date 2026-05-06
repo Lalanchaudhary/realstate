@@ -42,6 +42,14 @@ function gtag_report_conversion(url) {
 </head>
 
 <body>
+  <div class="popup-overlay" id="landing-popup">
+    <a href="https://api.whatsapp.com/send?phone=917909042424&text=Hii..%20I%20Want%20Know%20more!"
+      class="popup-content" target="_blank" rel="noreferrer noopener"
+      onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=917909042424&text=Hii..%20I%20Want%20Know%20more!');">
+      <img src="real.jpg" alt="Realtyza special offer" />
+    </a>
+  </div>
+
   <a href="https://api.whatsapp.com/send?phone=917909042424&text=Hii..%20I%20Want%20Know%20more!"
     class="whatsapp-button" target="_blank" rel="noreferrer noopener"
     onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=917909042424&text=Hii..%20I%20Want%20Know%20more!');">WhatsApp</a>
@@ -187,11 +195,6 @@ function gtag_report_conversion(url) {
       </div>
     </div>
   </footer>
-  <script>
-    setTimeout(() => {
-      document.getElementById('popup-toggle').checked = true;
-    }, 1000);
-  </script>
 </body>
 
 </html>
